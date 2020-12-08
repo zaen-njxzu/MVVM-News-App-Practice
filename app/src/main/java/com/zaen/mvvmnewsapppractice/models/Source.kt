@@ -1,4 +1,4 @@
-package com.zaen.mvvmnewsapppractice
+package com.zaen.mvvmnewsapppractice.models
 
 data class Source(
     val id: Any,

@@ -1,6 +1,6 @@
 package com.zaen.mvvmnewsapppractice.api
 
-import com.zaen.mvvmnewsapppractice.NewsResponse
+import com.zaen.mvvmnewsapppractice.models.NewsResponse
 import com.zaen.mvvmnewsapppractice.util.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET

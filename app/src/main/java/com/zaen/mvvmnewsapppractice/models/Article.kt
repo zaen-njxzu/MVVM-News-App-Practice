@@ -1,8 +1,7 @@
-package com.zaen.mvvmnewsapppractice
+package com.zaen.mvvmnewsapppractice.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.zaen.mvvmnewsapppractice.Source
 
 @Entity(
     tableName = "articles"

@@ -2,7 +2,7 @@ package com.zaen.mvvmnewsapppractice.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.zaen.mvvmnewsapppractice.Article
+import com.zaen.mvvmnewsapppractice.models.Article
 
 @Dao
 interface ArticleDao {
