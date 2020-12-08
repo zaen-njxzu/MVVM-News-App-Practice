@@ -1,8 +1,15 @@
 package com.zaen.mvvmnewsapppractice
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.zaen.mvvmnewsapppractice.Source
 
+@Entity(
+    tableName = "articles"
+)
 data class Article(
+    @PrimaryKey(autoGenerate = true)
+    val id: Int? = null,
     val author: String,
     val content: String,
     val description: String,
