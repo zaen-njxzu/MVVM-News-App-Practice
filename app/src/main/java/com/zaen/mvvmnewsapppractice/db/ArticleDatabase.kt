@@ -9,7 +9,7 @@ import com.zaen.mvvmnewsapppractice.models.Article
 
 @Database(
     entities = [Article::class],
-    version = 1
+    version = 2
 )
 @TypeConverters(Converters::class)
 abstract class ArticleDatabase : RoomDatabase() {
@@ -27,10 +27,12 @@ abstract class ArticleDatabase : RoomDatabase() {
 
         private fun createDatabase(context: Context) =
             Room.databaseBuilder(
-                context.applicationContext,
-                ArticleDatabase::class.java,
-                "article_db.db"
-            ).build()
+                    context.applicationContext,
+                    ArticleDatabase::class.java,
+                    "article_db.db"
+                )
+                .fallbackToDestructiveMigration()
+                .build()
 
     }
 
